@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-245032-6');
+</script>
+<title>Homogeneous Equations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="canonical" href="https://math24.net/homogeneous-equations.html"/>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+<style>
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <span class="navbar-toggle" id="js-navbar-toggle">
+    <img src="images/hamburger.svg" alt="Hamburger icon" width="30" height="20.4">
+  </span>
+  <a href="index_html.html"><img src="" id="logo1" alt="LearnEngg" width="120" height="35.9"></a>
+  <ul class="main-nav" id="js-menu">
+    <li><a href="topics-precalculus.html" class="nav-links">Precalculus</a></li>
+    <li><a href="topics-calculus.html" class="nav-links">Calculus</a></li>
+    <li><a href="topics-differential-equations.html" class="nav-links">Differential Equations</a></li>
+  </ul>
+</nav>
+<header class="header-differential-equations">
+  <div class="header-container">
+    <div class="header-title_container">
+	  <div class="course-title">
+		<h1>Differential Equations</h1>	
+	  </div>
+	  <div class="chapter-title">
+		<h2>First Order Equations</h2>
+	  </div>
+	</div>	
+	<div class="header-chapter-image">	
+	  <img src="images/header-diffeq-1st-order-equations.svg" class="header-image" alt="1st Order Diff Equations Logo" width="600" height="197.2">
+	</div>
+  </div>
+</header>
+<div align="center" style="height: 5px; padding: 20px 0px 15px 0px;">
+</div>
+<section>
+  <article>
+	<h1>Homogeneous Equations</h1>
+	<div class="breadcrumbs"><a href="index_html.html">Home</a> &#8594; <a href="topics-differential-equations.html">Differential Equations</a> &#8594; <a href="topics-differential-equations.html#1st-order-equations">1st Order Equations</a> &#8594; <a href="index_html.html">Homogeneous Equations</a></div>
+	<h2>Definition of Homogeneous Differential Equation</h2>
+	<p>A first order differential equation</p>
+	<div class="mjax">\[\frac{{dy}}{{dx}} = f\left( {x,y} \right)\]</div>
+	<p>is called <span class="hldiff">homogeneous equation</span>, if the right side satisfies the condition</p>
+	<div class="mjax">\[f\left( {tx,ty} \right) = f\left( {x,y} \right)\]</div>
+	<p>for all \(t.\) In other words, the right side is a homogeneous function (with respect to the variables \(x\) and \(y\)) of the zero order:</p>
+	<div class="mjax">\[f\left( {tx,ty} \right) = {t^0}f\left( {x,y} \right) = f\left( {x,y} \right).\]</div>
+	<p>A homogeneous differential equation can be also written in the form</p>
+	<div class="mjax">\[y' = f\left( {\frac{x}{y}} \right),\]</div>
+	<p>or alternatively, in the differential form:</p>
+	<div class="mjax">\[P\left( {x,y} \right)dx + Q\left( {x,y} \right)dy = 0,\]</div>
+	<p>where \(P\left( {x,y} \right)\) and \(Q\left( {x,y} \right)\) are homogeneous functions of the same degree.</p>
+	<h2>Definition of Homogeneous Function</h2>
+	<p>A function \(P\left( {x,y} \right)\) is called a <span class="hldiff">homogeneous function</span> of the degree \(n\) if the following relationship is valid for all \(t \gt 0:\)</p>
+	<div class="mjax">\[P\left( {tx,ty} \right) = {t^n}P\left( {x,y} \right).\]</div>
+	<h2>Solving Homogeneous Differential Equations</h2>
+	<p>A homogeneous equation can be solved by substitution \(y = ux,\) which leads to a separable differential equation.</p>
+	<p>A differential equation of kind</p>
+	<div class="mjax">\[\left( {{a_1}x + {b_1}y + {c_1}} \right)dx + \left( {{a_2}x + {b_2}y + {c_2}} \right)dy = 0\]</div>
+	<p>is converted into a separable equation by moving the origin of the coordinate system to the point of intersection of the given straight lines. If these straight lines are parallel, the differential equation is transformed into separable equation by using the change of variable:</p>
+	<div class="mjax">\[z = ax + by.\]</div>
+	<h2>Solved Problems</h2>
+	<p class="clickme">Click or tap a problem to see the solution.</p>
+	<div class="example-container">
+	<div class="example-block" onclick="location.href='#example1';">
+	<h3>Example 1</h3>
+	<p>Solve the differential equation \[\left( {2x + y} \right)dx - xdy = 0.\]</p>
+	</div>
+
+	</div> 
+	<!-- <div class="example-description" id="example1">
+	<h3>Example 1.</h3>
+	<p>Solve the differential equation \[\left( {2x + y} \right)dx - xdy = 0.\]</p>
+	</div> -->
+	<p class="solution-title">Solution.</p>
+	<p>It is easy to see that the polynomials \(P\left( {x,y} \right)\) and \(Q\left( {x,y} \right),\) respectively, at \(dx\) and \(dy,\) are homogeneous functions of the first order. Therefore, the original differential equation is also homogeneous.</p>
+	<p>Suppose that \(y = ux,\) where \(u\) is a new function depending on \(x.\) Then</p>
+	<div class="mjax">\[dy = d\left( {ux} \right) = udx + xdu.\]</div>
+	<p>Substituting this into the differential equation, we obtain</p>
+	<div class="mjax">\[\left( {2x + ux} \right)dx - x\left( {udx + xdu} \right) = 0.\]</div>
+	<p>Hence,</p>
+	<div class="mjax">\[2xdx + \cancel{uxdx} - \cancel{xudx} - {x^2}du = 0.\]</div>
+	<p>Dividing both sides by \(x\) yields:</p>
+	<div class="mjax">\[xdu = 2dx\;\;\text{or}\;\; du = 2\frac{{dx}}{x}.\]</div>
+	<p>When dividing by \(x,\) we could lose the solution \(x = 0.\) The direct substitution shows that \(x = 0\) is indeed a solution of the given differential equation.</p>
+	<p>Integrate the latter expression to obtain:</p>
+	<div class="mjax">\[\int {du}  = 2\int {\frac{{dx}}{x}} \;\;\text{or}\;\; u = 2\ln \left| x \right| + C,\]</div>
+	<p>where \(C\) is a constant of integration.</p>
+	<p>Returning to the old variable \(y,\) we can write:</p>
+	<div class="mjax">\[y = ux = x\left( {2\ln \left| x \right| + C} \right).\]</div>
+	<p>Thus, the equation has two solutions:</p>
+	<div class="mjax">\[y = x\left( {2\ln \left| x \right| + C} \right),\;\; x = 0.\]</div>
+
+	
+  </article>
+  <aside>
+	<div class="recommended-pages-container-differential-equations">  
+    <h3>Recommended Pages</h3>
+	<ul class="ulist-recommended-pages">
+	<li><a href="separable-equations.html">Separable Equations</a></li>
+	<li><a href="index_html.html">Homogeneous Equations</a></li>
+	<li><a href="linear-differential-equations-first-order.html">Linear Equations</a></li>
+	<li><a href="exact-differential-equations.html">Exact Equations</a></li>
+	<li><a href="using-integrating-factor.html">Using an Integrating Factor</a></li>
+	<li><a href="bernoulli-equation.html">Bernoulli Equation</a></li>
+	<li><a href="riccati-equation.html">Riccati Equation</a></li>
+	<li><a href="implicit-differential-equations.html">Implicit Equations</a></li>
+	<li><a href="singular-solutions-differential-equations.html">Singular Solutions</a></li>
+	</ul>
+	</div>
+  </aside>
+</section>
+<div class="pages-container">
+	<a href="index_html.html" class="page-number">Page 1</a>
+	<!-- <a href="homogeneous-equations-page-2.html" class="page-number">Page 2</a> -->
+</div>
+<footer>
+  <div class="footer-container">
+    <!-- <div class="footer-blocks">
+	  <div class="footer-elements"><h2>Legal</h2></div>
+	  <div class="footer-elements">Copyright &copy; 2009-2021 <a href="index.html">math24.net</a></div>
+	  <div class="footer-elements">Alex Svirin, PhD</div>
+	  <div class="footer-elements"><a href="privacy-policy.html">Privacy Policy</a></div>
+    </div>
+    <div class="footer-blocks">
+	  <div class="footer-elements"><h2>Contact</h2></div>
+	  <div class="footer-elements"><a href="mailto:info@math24.net">info@math24.net</a></div>
+	</div> -->
+    <div class="footer-blocks">
+	  <div class="footer-elements"><h2>Tools</h2></div>
+	  <div class="footer-elements"><a href="https://www.mathjax.org/"><img id="mathjax-logo" title="Powered by MathJax" src="images/badge-square-3.png" alt="Powered by MathJax" width="128" height="128"/></a></div>
+	</div>
+  </div>
+</footer>
+<!-- Script to toggle drop down menu in mobile view -->
+<script type="text/javascript">
+	let mainNav = document.getElementById("js-menu");
+	let navBarToggle = document.getElementById("js-navbar-toggle");
+	navBarToggle.addEventListener("click", function() {
+	  mainNav.classList.toggle("active");
+	});
+</script>
+</html>

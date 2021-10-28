@@ -1,0 +1,767 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #efefef;
+}
+p {
+  line-height: 1.7em;
+}
+a {
+  color: #C85A17; /* chocolate */
+  text-decoration: none;	
+}
+hr {
+  width: 80%; 
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: gray;
+  opacity: 0.4;
+  border: 0px none;
+  height: 1px;
+}
+
+
+
+
+
+/* NAVIGATION MENU */
+/* Mobile navigation */
+nav {
+  background-color: #41617A;
+  padding: 0 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+#logo1 {
+  width: 100px;
+  margin: 7px 0px 0px 5px;
+}
+.navbar {
+  padding-bottom: 5px;
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.nav-links:hover {
+  color: #add8e6;
+}
+.main-nav li {
+  text-align: center;
+  margin: 25px auto;
+}
+.navbar-toggle {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+.active {
+  display: block;
+}
+
+/* Desktop navigation */
+@media (min-width: 800px) {
+  #logo1 {
+   	height: 50px;
+	width: 125px;
+	margin: 8px 0px 0px 25px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+	margin-top: 5px;
+    flex-direction: row;
+    justify-content: flex-end;
+	flex-wrap: wrap;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin: 0px 15px;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .nav-links {
+    margin: 0px 20px;
+  }
+}
+
+
+
+
+
+
+/* HEADER */
+/* Mobile header */
+header {
+  background-color: #B0D6F5;
+  padding: 30px;
+}
+.header-calculus {
+  background-color: #a8d8ff;
+ }
+.header-precalculus {
+  background-color: #99e6ff;
+}
+.header-differential-equations {
+  background-color: #84e3df;
+ }
+.header-container {
+  min-height: 275px;	
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-around; 
+  align-items: center; 
+  flex-flow: row wrap; 
+  font-size: 25px;
+  color: white; 
+  flex-direction: column;
+}
+.header-title-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-direction: column;
+}
+.header-chapter-image {
+  max-width: 300px;
+}
+.header-image {
+  max-width: 275px;
+  padding: 10px 0px;
+  height: auto;
+}
+.course-title h1 {
+  color: white; 
+  text-shadow: 2px 2px 4px #000000; 
+  font-size: 52px;
+  font-weight: 400;
+  font-family: arial; 
+  padding: 5px; 
+  text-align: center;
+}
+.chapter-title h2 {
+  color: #41617A;
+  font-size: 32px;
+  font-weight: 300; 
+  text-align: center; 
+  padding: 5px;
+}
+
+/* Modern Mobile header */
+@media (min-width: 400px) {
+  .header-chapter-image {
+    max-width: 400px; 
+  }
+  .header-image {
+    max-width: 350px;	
+  }
+}
+
+/* Desktop header */
+@media (min-width: 800px) {
+  .header-container {
+    padding: 20px; 
+	flex-flow: row wrap; 
+	font-size: 30px;
+	color: white;
+  }
+  .header-chapter-image {
+	padding: 10px; 
+	max-width: 600px;
+  }
+  .header-image {
+	max-width: 500px;	
+  }
+  .course-title h1 {
+	font-size: 70px;
+  }
+  .chapter-title h2 {
+	font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+/* BASIC LAYOUT, SIDEBAR AND RECOMMENDED PAGES */
+/* Container for content and sidebar */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Content */
+article {
+  background-color: white;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+/* Sidebar */
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;  
+  background-color: white;
+  padding: 20px 15px;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  article {
+	padding: 20px 20px;	
+  }
+  aside {
+	padding: 20px 20px;
+  }
+}
+
+/* Responsive layout - 940+340=1280 */
+@media (min-width: 1280px) {
+  section {
+    flex-direction: row;
+  }
+  article {
+    max-width: 940px; /* Article width */
+  }
+  aside {
+    width: 340px; /* Sidebar width */
+	border-left: 1px solid #ddd;
+	padding: 20px 20px;
+  }
+}
+
+/* Sidebar, Recommended Pages and Ad_Side */
+.recommended-pages-container-calculus, .recommended-pages-container-precalculus, .recommended-pages-container-differential-equations {
+  width: 100%;
+  padding: 20px;
+  margin-top: 0px;
+  border: 1px solid #41617A;
+}
+.recommended-pages-container-calculus {
+  background-color: white;
+}
+.recommended-pages-container-precalculus {
+  background-color: white;
+}
+.recommended-pages-container-differential-equations {
+  background-color: white;
+}
+.recommended-pages-container-calculus h3, .recommended-pages-container-precalculus h3, .recommended-pages-container-differential-equations h3 {
+  color: #41617A;
+  padding-bottom: 20px;
+  font-size: 24px;
+  text-shadow: 0px 0px #000000;
+}
+.recommended-pages-container-calculus a, .recommended-pages-container-precalculus a, .recommended-pages-container-differential-equations a {
+  font-size: 18px; /* font size mobile */
+}
+@media (min-width: 800px) {
+  .recommended-pages-container-calculus, .recommended-pages-container-precalculus, .recommended-pages-container-differential-equations {
+    padding: 20px;
+  }
+  .recommended-pages-container-calculus a, .recommended-pages-container-precalculus a, .recommended-pages-container-differential-equations a {
+  	font-size: 19px; /* font size desktop in article */
+  }
+}
+@media (min-width:1280px) {
+  .recommended-pages-container-calculus, .recommended-pages-container-precalculus, .recommended-pages-container-differential-equations {
+	padding: 20px;
+	margin-top: 0px;
+  }
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: #41617A;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Mobile footer */ 
+#mathjax-logo {
+  width: 80px;
+  height: 80px;	
+}
+.footer-container {
+  display: flex;
+  padding: 0px;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  color: white;
+}
+.footer-blocks {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-elements {
+  padding: 5px;
+  align-items: start;
+  color: #add8e6;
+}
+.footer-elements h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;	
+}
+.footer-elements a {
+  color: #40D6F5;   
+  text-decoration: none;	
+}
+
+@media (min-width: 800px) {
+  #mathjax-logo {
+	width: 128px;
+	height: 128px;	
+  }
+  .footer-blocks {
+    width: 350px;
+  }
+  .footer-elements h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+/* PAGE CONTENT - ARTICLE */
+article h1 {
+  font-size: 33px;
+  font-family: Georgia;
+  padding-bottom: 20px;
+}
+article h2, article h3, article h4 {
+  font-family: Arial;
+  color: #41617A;
+}
+article h2 {
+  font-size: 25px;
+  padding: 26px 0px 10px 0px;
+}
+article h3 {
+  font-size: 21px;
+  padding: 22px 0px 8px 0px;
+}
+article h4 {
+  font-size: 19px;
+  padding: 12px 0px 5px 0px;
+}
+article p {
+  font-size: 18px; /* font size mobile */
+  font-family: Georgia;
+  line-height: 1.6em;
+  padding: 10px 0px;
+}
+.breadcrumbs {
+  font-size: 17px; 
+  padding-bottom: 10px;
+  line-height: 1.7em;
+}
+.breadcrumbs a {
+/*  white-space: nowrap; */
+}
+.mjax {
+  color: black;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  padding: 0px;
+  margin: -5px 0px;
+  font-size: 17px;
+}
+@media (min-width: 800px) {
+  article h1 {
+    font-size: 45px;
+  }
+  article h2 {
+	font-size: 30px;
+  }
+  article h3 {
+	font-size: 23px;
+  }
+  article h4 {
+	font-size: 21px;
+  }
+  article p {
+	font-size: 20px; /* font size desktop in article */
+	line-height: 1.8em;
+  }
+  .mjax {
+	font-size: 19px;
+  }
+  .breadcrumbs {
+	font-size: 18px; 
+  }
+}
+.clickme {
+  color: #006699; 
+  font-weight: 200; 
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/* EXAMPLES */
+.example-container {
+  display: flex; 
+  border: 0px solid red; 
+  padding: 0px;
+  margin: -10px;
+  justify-content: center; 
+  align-items: center; 
+  flex-flow: row wrap;
+}
+.example-block {
+  padding: 10px; 
+  margin: 10px; 
+  border: 1px solid #bdbdbd;
+  font-family: Georgia;
+  line-height: 1em;
+  flex-basis: 800px;
+  min-width: 250px;
+  cursor: pointer;
+}
+.example-description {
+  background-color: #efefef; 
+  border: 1px solid #41617A;
+  padding: 0px 10px 10px 10px; 
+  margin-top: 20px;
+}
+@media (min-width: 800px) {
+  .example-container {
+    justify-content: stretch;
+	align-items: stretch;
+  }
+  .example-block {
+	flex-grow: 1;
+	flex-basis: 400px;
+  }
+}
+.solution-title {
+  font-style: italic; 
+  padding: 10px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+/* FORMATTING IMAGES */
+.image150, .image175, .image200, .image225, .image250, .image275, .image300, .image325, .image350, .image375, .image400, .image425, .image450, .image475, .image500, .image525, .image550, .image575, .image600, .image625, .image650, .image675, .image700, .image725, .image750, .image775, .image800, .image825, .image850, .image875, .image900 {
+  margin: auto;
+  padding: 25px 10px 15px 10px;
+  border: 0px solid red;
+}
+.image150 {max-width: 150px;}
+.image175 {max-width: 175px;}
+.image200 {max-width: 200px;}
+.image225 {max-width: 225px;}
+.image250 {max-width: 250px;}
+.image275 {max-width: 275px;}
+.image300 {max-width: 300px;}
+.image325 {max-width: 325px;}
+.image350 {max-width: 350px;}
+.image375 {max-width: 375px;}
+.image400 {max-width: 400px;}
+.image425 {max-width: 425px;}
+.image450 {max-width: 450px;}
+.image475 {max-width: 475px;}
+.image500 {max-width: 500px;}
+.image525 {max-width: 525px;}
+.image550 {max-width: 550px;}
+.image575 {max-width: 575px;}
+.image600 {max-width: 600px;}
+.image625 {max-width: 625px;}
+.image650 {max-width: 650px;}
+.image675 {max-width: 675px;}
+.image700 {max-width: 700px;}
+.image725 {max-width: 725px;}
+.image750 {max-width: 750px;}
+.image775 {max-width: 775px;}
+.image800 {max-width: 800px;}
+.image825 {max-width: 825px;}
+.image850 {max-width: 850px;}
+.image875 {max-width: 875px;}
+.image900 {max-width: 900px;}
+.svg-image img {
+  width: 100%;
+  height: auto;
+  border: 0px solid blue;
+}
+figcaption {
+  text-align: center; 
+  color: gray; 
+  font-size: 90%; 
+  padding-top: 25px; 
+}
+
+
+
+
+
+
+
+
+
+/* FORMATTING LISTS */
+ol.olist {
+  list-style-type: none;
+  padding: 20px 0px;
+  margin-top: -10px;
+  font-size: 18px; /* font size mobile */
+  font-family: Georgia;
+  line-height: 1.6em;
+}
+ol.olist li {
+  counter-increment: counter1;
+  padding: 5px 0px 0px 0px;
+  display: block;
+}
+ol.olist li:before {
+  display: inline-block;
+  width: 26px;
+  height: 21px;
+  text-align: center;
+  padding: 3px 3px 2px 2px;
+  content: counter(counter1);
+  margin: 2px 12px 2px 0px;	
+  font: 18px arial;
+  background-color: rgba(219,219,219,0.47);
+  color: black;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+  border: 1px solid #41617A;
+}
+ul.ulist {
+  list-style-type: none;
+  padding: 5px 0px 8px 0px;
+  margin-left: 20px;
+  font-size: 18px; /* font size mobile */
+  font-family: Georgia;
+  line-height: 1.6em;
+}
+ul.ulist li {
+  padding: 5px 0px 0px 0px;
+}
+ul.ulist li:before {
+  content: "•";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  color: #41617A;
+}
+.ulist-recommended-pages {
+  list-style-type: none;
+  font-size: 18px; /* font size mobile */
+  font-family: Georgia;
+}
+.ulist-recommended-pages li {
+  margin: 5px 0px 15px 0px;		
+}
+.mjax-list {
+  color: black;
+  overflow-x: auto;
+  display: block;
+  padding: 5px 0px 0px 0px;
+  font-size: 18px;
+}
+@media (min-width: 800px) {
+  ol.olist {
+    padding: 20px 0px;
+	font-size: 20px; /* font size desktop */
+	line-height: 1.8em;
+  }
+  ol.olist li:before {
+	width: 28px;
+	height: 23px;
+	padding: 3px 2px 2px 2px;
+	margin: 2px 12px 2px 0px;	
+	font: 20px arial;
+  }
+  ul.ulist {
+	font-size: 20px; /* font size desktop */
+	line-height: 1.8em;
+    margin-left: 40px;
+  }
+  .mjax-list {
+	font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* PAGES NUMBERING */
+.pages-container {
+  padding: 10px 20px 0px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-flow: row wrap;
+}
+.page-number {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 100;
+  background-color: #41617A;
+  color: white;
+  justify-content: space-around;
+  margin: 0px 10px 10px 10px;
+  cursor: pointer;
+  display: block;
+}
+@media (min-width: 800px) {
+  .page-number {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+/* NOTE ABOUT NEXT PAGES */
+.next-pages p {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF6347;
+}
+@media (min-width: 800px) {
+  .next-pages p {
+    padding: 10px 0px 20px 0px;
+	font-size: 25px;
+  }
+}
+
+
+
+
+/* HIGHLIGHTING KEY TERMS */
+.hlcalc {
+  color: #116699;
+}
+.hldiff {
+  color: #117B77;
+}
+.hlform {
+  color: #718f97;
+}
+
+
+
+
+
+/* FORMULAS NOTATION */
+.notation_container {
+	overflow: auto; border: 1px solid #35606b; background-color: #eeeeee; margin-top: 20px; margin-bottom: 20px; padding-bottom: 20px;
+}
+.notation_block {
+	float: left; max-width: 435px; margin-bottom: -20px; margin-right: 30px; padding-left: 15px;
+}
+
+
+
+
+
+
+/* COOKIE BANNER */
+.cookie-banner {
+  position: fixed;
+  bottom: 10px;
+  width: 80%;
+  max-width: 550px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ADD8E6;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.close {
+  height: 25px;
+  width: 25px;
+  background-color: #777;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* HACKS */
+/* Removing blue frame around Mathjax in iPhone */
+.MathJax:focus, .mjx-chtml:focus, .MathJax_SVG:focus {
+  outline: 1px solid #ddd;
+}
