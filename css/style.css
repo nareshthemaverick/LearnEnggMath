@@ -1,0 +1,96 @@
+body{font-family: 'Roboto' !important; font-size: 20px !important; }
+
+.main{ margin-top: 25px;
+    text-align: left;
+    width: 100%;
+}
+
+.head {font-size: 22px; 
+    font-weight: 700;
+    background: #1A73E8;
+    padding: 10px;
+    color: #fff;
+}
+
+.main-2{
+    margin-left: 2%;
+}
+
+.sub-head {
+    font-size: 20px; 
+    font-weight: 700;
+    color: #FF4800;
+    background: #e6e6e6;
+
+    padding: 10px;
+}
+
+
+.content {margin-left: 3%;}
+
+
+.question1 { 
+    display: flex;
+    margin: 10px 20px 20px;
+    
+}
+
+.question2 { 
+    line-height: 35px;
+    margin: 10px 20px 20px;
+    
+}
+
+.question2 li {
+
+    margin-bottom: 15px;
+}
+
+.equ{margin-left: 10px;}
+
+.solution {
+    margin-top: 10px; 
+  
+}
+
+.given {
+    margin: 0px 15px;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    
+}
+
+.math {margin: 0 5px 35px;
+    font-size: 20px;
+
+}
+
+.text{margin-left: 10px;}
+
+.answer{
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(120deg, rgba(120,103,224,1) 0%, rgba(118,112,224,1) 0%, rgba(67,160,186,1) 100%);
+    padding: 10px; width: 20%;
+    border-radius:10px; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    
+}
+
+.equal{
+    margin-left: 10%;
+    
+}
+
+.eq1{
+    width: 100%;
+
+}
+
+.eq{margin-bottom: 3%;
+
+}

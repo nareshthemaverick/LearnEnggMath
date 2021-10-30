@@ -243,7 +243,7 @@ aside {
   align-items: center;  
   background-color: white;
   padding: 20px 15px;
-  width: 100%;
+  width: auto;
 }
 @media (min-width: 800px) {
   article {
