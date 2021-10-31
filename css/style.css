@@ -26,30 +26,34 @@ body{font-family: 'Roboto' !important; font-size: 20px !important; }
 }
 
 
-.content {margin-left: 2%;}
+.content {
+    /* margin-left: 2%; */
+}
 
 
 .question1 { 
     display: flex;
-    margin: 10px 20px 20px;
+    /* margin: 10px 20px 20px; */
     
 }
 
 .question2 { 
     line-height: 35px;
-    margin: 10px 20px 20px;
+    /* margin: 10px 20px 20px; */
     
 }
 
 .question2 li {
 
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
-.equ{margin-left: 10px;}
+.equ{
+    /* margin-left: 10px; */
+}
 
 .solution {
-    margin-top: 10px; 
+    /* margin-top: 10px;  */
   
 }
 
@@ -67,7 +71,9 @@ body{font-family: 'Roboto' !important; font-size: 20px !important; }
 
 }
 
-.text{margin-left: 10px;}
+.text{
+    /* margin-left: 10px; */
+}
 
 .answer{
     color: #fff;
