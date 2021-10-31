@@ -380,7 +380,7 @@ footer {
 /* PAGE CONTENT - ARTICLE */
 article h1 {
   font-size: 33px;
-  font-family: Georgia;
+  font-family: Roboto;
   padding-bottom: 20px;
 }
 article h2, article h3, article h4 {
@@ -401,7 +401,7 @@ article h4 {
 }
 article p {
   font-size: 18px; /* font size mobile */
-  font-family: Georgia;
+  font-family: Roboto;
   line-height: 1.6em;
   padding: 10px 0px;
 }
@@ -473,7 +473,7 @@ article p {
   padding: 10px; 
   margin: 10px; 
   border: 1px solid #bdbdbd;
-  font-family: Georgia;
+  font-family: Roboto;
   line-height: 1em;
   flex-basis: 800px;
   min-width: 250px;
@@ -569,7 +569,7 @@ ol.olist {
   padding: 20px 0px;
   margin-top: -10px;
   font-size: 18px; /* font size mobile */
-  font-family: Georgia;
+  font-family: Roboto;
   line-height: 1.6em;
 }
 ol.olist li {
@@ -596,7 +596,7 @@ ul.ulist {
   padding: 5px 0px 8px 0px;
   margin-left: 20px;
   font-size: 18px; /* font size mobile */
-  font-family: Georgia;
+  font-family: Roboto;
   line-height: 1.6em;
 }
 ul.ulist li {
@@ -612,7 +612,7 @@ ul.ulist li:before {
 .ulist-recommended-pages {
   list-style-type: none;
   font-size: 18px; /* font size mobile */
-  font-family: Georgia;
+  font-family: Roboto;
 }
 .ulist-recommended-pages li {
   margin: 5px 0px 15px 0px;		

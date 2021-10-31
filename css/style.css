@@ -26,7 +26,7 @@ body{font-family: 'Roboto' !important; font-size: 20px !important; }
 }
 
 
-.content {margin-left: 3%;}
+.content {margin-left: 2%;}
 
 
 .question1 { 
@@ -60,7 +60,6 @@ body{font-family: 'Roboto' !important; font-size: 20px !important; }
 .container {
     position: relative;
     display: grid;
-    
 }
 
 .math {margin: 0 5px 35px;
